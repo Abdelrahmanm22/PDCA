@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-translate="title">PDCA Pest Control - Professional Pest Management Solutions</title>
+  <meta name="description" content="PDCA Pest Control offers professional pest management services for homes and businesses including rodent, insect, and pest extermination. ISO 9001 certified." />
+  <meta name="author" content="PDCA Pest Control" />
+
+  <meta property="og:title" content="PDCA Pest Control - Professional Pest Management Solutions" />
+  <meta property="og:description" content="PDCA Pest Control offers professional pest management services for homes and businesses including rodent, insect, and pest extermination." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@lovable_dev" />
+  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+  <link rel="icon" href="/public/lovable-Uploads/328868f5-3433-4979-8f44-c318b2d31cf8.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        container: {
+          center: true,
+          padding: '2rem',
+          screens: {
+            '2xl': '1400px'
+          }
+        },
+        extend: {
+          colors: {
+            'pdca-blue': '#4d87c7',
+            'pdca-green': '#6cc07b',
+            'pdca-lightblue': '#e5f0ff',
+            'pdca-lightgreen': '#e5f9e8',
+            'pdca-gray': '#f5f5f5'
+          },
+          fontFamily: {
+            sans: ['Roboto', 'Amiri', 'sans-serif'],
+            heading: ['Montserrat', 'Amiri', 'sans-serif']
+          },
+          borderRadius: {
+            lg: '0.5rem',
+            md: 'calc(0.5rem - 2px)',
+            sm: 'calc(0.5rem - 4px)'
+          },
+          keyframes: {
+            'accordion-down': {
+              from: { height: '0' },
+              to: { height: 'var(--radix-accordion-content-height)' }
+            },
+            'accordion-up': {
+              from: { height: 'var(--radix-accordion-content-height)' },
+              to: { height: '0' }
+            },
+            'fade-in': {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            'slide-in': {
+              '0%': { opacity: '0', transform: 'translateX(-20px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' }
+            },
+            'zoom-in': {
+              '0%': { opacity: '0', transform: 'scale(0.95)' },
+              '100%': { opacity: '1', transform: 'scale(1)' }
+            }
+          },
+          animation: {
+            'accordion-down': 'accordion-down 0.2s ease-out',
+            'accordion-up': 'accordion-up 0.2s ease-out',
+            'fade-in': 'fade-in 0.5s ease-out forwards',
+            'slide-in': 'slide-in 0.5s ease-out forwards',
+            'zoom-in': 'zoom-in 0.5s ease-out forwards'
+          }
+        }
+      },
+      plugins: []
+    }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="flex justify-between items-center">
+        <a href="#home" class="flex items-center">
+          <img src="images/Logo.png" alt="PDCA Logo" class="h-10 md:h-12" />
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="text-gray-800 hover:text-pdca-blue font-medium transition-colors duration-200" data-translate="nav-home">Home</a>
+          <a href="#services" class="text-gray-800 hover:text-pdca-blue font-medium transition-colors duration-200" data-translate="nav-services">Services</a>
+          <a href="#who" class="text-gray-800 hover:text-pdca-blue font-medium transition-colors duration-200" data-translate="nav-who">Who We Are</a>
+          <a href="#why" class="text-gray-800 hover:text-pdca-blue font-medium transition-colors duration-200" data-translate="nav-why">Why Us</a>
+          <a href="#deals" class="text-gray-800 hover:text-pdca-blue font-medium transition-colors duration-200" data-translate="nav-deals">Deals</a>
+          <a href="#previous-work" class="text-gray-800 hover:text-pdca-blue font-medium transition-colors duration-200" data-translate="nav-previous">Previous Work</a>
+          <a href="#contact" class="text-gray-800 hover:text-pdca-blue font-medium transition-colors duration-200" data-translate="nav-contact">Contact</a>
+          <button id="language-toggle" class="bg-pdca-blue text-white px-4 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-pdca-blue/90" data-translate="lang-toggle">English</button>
+        </div>
+        <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none" aria-label="Toggle menu">
+          <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-white shadow-md animate-fade-in hidden">
+        <div class="flex flex-col py-4 px-4 space-y-4">
+          <a href="#home" class="text-gray-800 hover:text-pdca-blue py-2 font-medium" data-translate="nav-home">Home</a>
+          <a href="#services" class="text-gray-800 hover:text-pdca-blue py-2 font-medium" data-translate="nav-services">Services</a>
+          <a href="#who" class="text-gray-800 hover:text-pdca-blue py-2 font-medium" data-translate="nav-who">Who We Are</a>
+          <a href="#why" class="text-gray-800 hover:text-pdca-blue py-2 font-medium" data-translate="nav-why">Why Us</a>
+          <a href="#deals" class="text-gray-800 hover:text-pdca-blue py-2 font-medium" data-translate="nav-deals">Deals</a>
+          <a href="#previous-work" class="text-gray-800 hover:text-pdca-blue py-2 font-medium" data-translate="nav-previous">Previous Work</a>
+          <a href="#contact" class="text-gray-800 hover:text-pdca-blue py-2 font-medium" data-translate="nav-contact">Contact</a>
+          <button id="mobile-language-toggle" class="bg-pdca-blue text-white px-4 py-2 rounded-md font-medium text-left" data-translate="lang-toggle">English</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center pt-16 bg-gradient-pdca relative overflow-hidden">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-pdca-blue animate-fade-in" data-translate="hero-title">
+            Welcome to <span class="text-pdca-green">PDCA</span>
+          </h1>
+          <div class="overflow-hidden">
+            <p class="text-2xl md:text-3xl text-gray-700 font-medium animate-slide-in animate-delay-300" data-translate="hero-subtitle">
+              Professional Pest Control Solutions
+            </p>
+          </div>
+          <p class="text-gray-600 text-lg animate-fade-in animate-delay-600" data-translate="hero-description">
+            We provide effective pest management services for residential and commercial properties, 
+            using the latest methods and equipment to ensure your space remains pest-free.
+          </p>
+          <a href="#services" class="inline-flex items-center gap-2 bg-pdca-blue hover:bg-pdca-blue/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 animate-fade-in animate-delay-900" data-translate="hero-cta">
+            Our Services
+          </a>
+        </div>
+        <div class="relative animate-zoom-in animate-delay-600">
+          <div class="relative overflow-hidden rounded-lg shadow-xl">
+            <img src="images/home.png" alt="Pest Control Professional" class="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105" />
+          </div>
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-pdca-green rounded-full -z-10"></div>
+          <div class="absolute -top-4 -left-4 w-16 h-16 bg-pdca-blue rounded-full -z-10"></div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#services" class="text-pdca-blue">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-pdca-lightblue">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" data-translate="services-title">Our Services</h2>
+        <div class="w-16 h-1 bg-pdca-green mx-auto mb-6"></div>
+        <p class="text-gray-700 max-w-3xl mx-auto" data-translate="services-description">
+          PDCA Pest Control Company is honored to provide you with the best pest control services. This is because we have the best specialized and well-equipped team using the latest methods to combat all types of insects. We excel in fighting rodents, flying insects, and crawling insects.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+          <div class="flex flex-col items-center">
+            <div class="mb-4">
+              <img src="images/Ant.png" alt="Ant Extermination" class="w-16 h-auto" />
+            </div>
+            <h3 class="text-xl font-semibold text-pdca-blue mb-3" data-translate="service-ant-title">Ant Extermination</h3>
+            <p class="text-gray-600 text-center" data-translate="service-ant-description">Complete elimination of ant colonies with specialized treatments</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+          <div class="flex flex-col items-center">
+            <div class="mb-4">
+              <img src="images/Moth.png" alt="Moth Extermination" class="w-16 h-auto" />
+            </div>
+            <h3 class="text-xl font-semibold text-pdca-blue mb-3" data-translate="service-moth-title">Moth Extermination</h3>
+            <p class="text-gray-600 text-center" data-translate="service-moth-description">Effective moth control to protect your fabrics and foodstuffs</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+          <div class="flex flex-col items-center">
+            <div class="mb-4">
+              <img src="images/Mosquito.png" alt="Mosquito Extermination" class="w-16 h-auto" />
+            </div>
+            <h3 class="text-xl font-semibold text-pdca-blue mb-3" data-translate="service-mosquito-title">Mosquito Extermination</h3>
+            <p class="text-gray-600 text-center" data-translate="service-mosquito-description">Comprehensive mosquito control for indoor and outdoor spaces</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+          <div class="flex flex-col items-center">
+            <div class="mb-4">
+              <img src="images/Horned Beetle.png" alt="Beetle Extermination" class="w-16 h-auto" />
+            </div>
+            <h3 class="text-xl font-semibold text-pdca-blue mb-3" data-translate="service-beetle-title">Beetle Extermination</h3>
+            <p class="text-gray-600 text-center" data-translate="service-beetle-description">Targeted treatments for various beetle species and infestations</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <p class="text-gray-700 max-w-4xl mx-auto mb-6" data-translate="services-additional">
+          We offer you the best pest control services for companies, factories, commercial malls, hotels and tourist resorts, apartments, villas, restaurants, cafes, hospitals, schools, cruise ships, and more.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6 mt-8">
+          <div class="flex items-center gap-2">
+            <div class="w-4 h-4 rounded-full bg-pdca-blue"></div>
+            <span data-translate="services-commercial">Commercial Properties</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-4 h-4 rounded-full bg-pdca-green"></div>
+            <span data-translate="services-residential">Residential Properties</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-4 h-4 rounded-full bg-purple-400"></div>
+            <span data-translate="services-hospitality">Hospitality Industry</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-4 h-4 rounded-full bg-amber-500"></div>
+            <span data-translate="services-healthcare">Healthcare Facilities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="who" class="bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <div class="relative">
+            <img src="images/who us.jpg" alt="PDCA Pest Control Professional" class="rounded-lg shadow-xl w-full h-auto" />
+            <div class="absolute -bottom-5 -right-5 w-32 h-32 bg-pdca-lightblue rounded-lg -z-10"></div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-pdca-blue" data-translate="who-title">Who We Are</h2>
+          <div class="w-16 h-1 bg-pdca-green mb-6"></div>
+          <p class="text-gray-700 mb-6" data-translate="who-description-1">
+            The word PDCA is derived from the ISO 9001 certificate, and it is one of the tools for organizing operational processes. It means (Plan - Do - Check - Act, or retry if it fails). 
+          </p>
+          <p class="text-gray-700 mb-6" data-translate="who-description-2">
+            Therefore, from the beginning of forming the team and establishing it to customer satisfaction, things proceed with this method — the way to reach the highest levels of satisfaction.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="mr-3 mt-1 text-pdca-green">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <p><span class="font-bold text-pdca-blue" data-translate="who-plan-title">Plan:</span> <span data-translate="who-plan-description">We carefully analyze your specific pest control needs</span></p>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-3 mt-1 text-pdca-green">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <p><span class="font-bold text-pdca-blue" data-translate="who-do-title">Do:</span> <span data-translate="who-do-description">We implement targeted pest control solutions</span></p>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-3 mt-1 text-pdca-green">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <p><span class="font-bold text-pdca-blue" data-translate="who-check-title">Check:</span> <span data-translate="who-check-description">We monitor and evaluate the effectiveness</span></p>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-3 mt-1 text-pdca-green">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <p><span class="font-bold text-pdca-blue" data-translate="who-act-title">Act:</span> <span data-translate="who-act-description">We refine our approach for optimal results</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section id="why" class="bg-pdca-lightgreen">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-pdca-blue" data-translate="why-title">Why Choose Us</h2>
+          <div class="w-16 h-1 bg-pdca-green mb-6"></div>
+          <p class="text-gray-700 mb-8" data-translate="why-description">
+            PDCA Company has a fully integrated pest control team specialized in public health pesticides. The team has been formed through specialization and has up to 15 years of experience in food safety and pest control. In addition, there is a quality monitoring team and an operations organizer who ensures quality through weekly, monthly, and yearly reports, supported by statistics that indicate the program's success and corrective actions in case of errors.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="flex items-start">
+              <div class="mr-3 p-2 bg-white rounded-full shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pdca-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-pdca-blue" data-translate="why-specialized-title">Specialized Team</h3>
+                <p class="text-gray-600 text-sm" data-translate="why-specialized-description">Fully integrated pest control team specialized in public health pesticides</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-3 p-2 bg-white rounded-full shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pdca-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-pdca-blue" data-translate="why-experience-title">15+ Years Experience</h3>
+                <p class="text-gray-600 text-sm" data-translate="why-experience-description">Team formed through specialization with up to 15 years of experience</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-3 p-2 bg-white rounded-full shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pdca-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-pdca-blue" data-translate="why-quality-title">Quality Monitoring</h3>
+                <p class="text-gray-600 text-sm" data-translate="why-quality-description">Dedicated quality monitoring team ensuring service excellence</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-3 p-2 bg-white rounded-full shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pdca-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-pdca-blue" data-translate="why-reporting-title">Regular Reporting</h3>
+                <p class="text-gray-600 text-sm" data-translate="why-reporting-description">Weekly, monthly, and yearly reports backed by statistics</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-3 p-2 bg-white rounded-full shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pdca-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-pdca-blue" data-translate="why-success-title">Success Tracking</h3>
+                <p class="text-gray-600 text-sm" data-translate="why-success-description">Comprehensive statistics that indicate program success</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-3 p-2 bg-white rounded-full shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pdca-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-pdca-blue" data-translate="why-foodsafety-title">Food Safety Expertise</h3>
+                <p class="text-gray-600 text-sm" data-translate="why-foodsafety-description">Specialized in food safety and comprehensive pest control</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="images/why us.jpg" alt="PDCA Pest Control Professional working outdoors" class="rounded-lg shadow-xl w-full h-auto transform transition-transform duration-500 hover:scale-105" />
+          <div class="absolute -top-5 -left-5 w-32 h-32 bg-pdca-blue rounded-lg opacity-10 -z-10"></div>
+          <div class="absolute -bottom-5 -right-5 w-24 h-24 bg-pdca-green rounded-lg opacity-20 -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section id="deals" class="bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" data-translate="deals-title">Our Process</h2>
+        <div class="w-16 h-1 bg-pdca-green mx-auto mb-6"></div>
+        <p class="text-gray-700 max-w-3xl mx-auto" data-translate="deals-description">
+          The team conducts a site inspection, conducts a risk assessment to determine the program, determines the contract cost, and, after agreement, implements the program. The team is monitored by a site manager and a PDCA employee.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-pdca-lightblue rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="mr-3 bg-pdca-blue rounded-full p-1 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-xl text-pdca-blue" data-translate="deals-step1-title">Step 1: Site Inspection</h3>
+          </div>
+          <p class="text-gray-600 ml-10" data-translate="deals-step1-description">Our team conducts a thorough site inspection to understand the scope of work required.</p>
+        </div>
+        <div class="bg-pdca-lightblue rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="mr-3 bg-pdca-blue rounded-full p-1 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-xl text-pdca-blue" data-translate="deals-step2-title">Step 2: Risk Assessment</h3>
+          </div>
+          <p class="text-gray-600 ml-10" data-translate="deals-step2-description">We perform a detailed risk assessment to determine the appropriate program for your needs.</p>
+        </div>
+        <div class="bg-pdca-lightblue rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="mr-3 bg-pdca-blue rounded-full p-1 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-xl text-pdca-blue" data-translate="deals-step3-title">Step 3: Contract Agreement</h3>
+          </div>
+          <p class="text-gray-600 ml-10" data-translate="deals-step3-description">After determining the contract cost, we proceed upon agreement with all parties.</p>
+        </div>
+        <div class="bg-pdca-lightblue rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="mr-3 bg-pdca-blue rounded-full p-1 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-xl text-pdca-blue" data-translate="deals-step4-title">Step 4: Program Implementation</h3>
+          </div>
+          <p class="text-gray-600 ml-10" data-translate="deals-step4-description">We implement the pest control program with our expert team and equipment.</p>
+        </div>
+        <div class="bg-pdca-lightblue rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="mr-3 bg-pdca-blue rounded-full p-1 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-xl text-pdca-blue" data-translate="deals-step5-title">Step 5: Monitoring & Reporting</h3>
+          </div>
+          <p class="text-gray-600 ml-10" data-translate="deals-step5-description">A site manager and PDCA employee monitor progress with detailed reports.</p>
+        </div>
+        <div class="bg-pdca-lightblue rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="mr-3 bg-pdca-blue rounded-full p-1 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-xl text-pdca-blue" data-translate="deals-step6-title">Step 6: Performance Analysis</h3>
+          </div>
+          <p class="text-gray-600 ml-10" data-translate="deals-step6-description">We generate statistics, track progress, and discuss program status in joint meetings.</p>
+        </div>
+      </div>
+      <div class="mt-16 bg-gradient-pdca rounded-xl p-8 shadow-lg">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/3">
+            <img src="images/process.jpg" alt="Pest Control Professional with Equipment" class="rounded-lg shadow-md" />
+          </div>
+          <div class="md:w-2/3">
+            <h3 class="text-2xl font-bold text-pdca-blue mb-4" data-translate="deals-improvement-title">Continuous Improvement Process</h3>
+            <p class="text-gray-700 mb-6" data-translate="deals-improvement-description">
+              A report is presented after each service, traffic and weekly visits are recorded, statistics are generated, and the program status is discussed during a joint meeting between the site manager and PDCA. This ensures transparency and continuous improvement in our pest control services.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <div class="bg-white px-4 py-2 rounded-full shadow-sm text-pdca-blue font-medium" data-translate="deals-weekly">Weekly Reports</div>
+              <div class="bg-white px-4 py-2 rounded-full shadow-sm text-pdca-blue font-medium" data-translate="deals-statistics">Statistical Analysis</div>
+              <div class="bg-white px-4 py-2 rounded-full shadow-sm text-pdca-blue font-medium" data-translate="deals-meetings">Joint Meetings</div>
+              <div class="bg-white px-4 py-2 rounded-full shadow-sm text-pdca-blue font-medium" data-translate="deals-progress">Progress Tracking</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Previous Work Section -->
+  <section id="previous-work" class="bg-pdca-lightgreen">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" data-translate="previous-title">Our Previous Work</h2>
+        <div class="w-16 h-1 bg-pdca-green mx-auto mb-6"></div>
+        <p class="text-gray-700 max-w-3xl mx-auto" data-translate="previous-description">
+          We are proud to have provided pest control services to a wide range of esteemed partners across various industries. Here are some of the companies we’ve worked with.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/Amer.jpg" alt="Amer Group Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/Arab Dev.jpg" alt="Porto Group Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/Batros.jpg" alt="Pickalbatros Hotels & Resorts Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/hidelperg.jpg" alt="Seafood Nour Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/Matroh.jpg" alt="Arab Developers Holding Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/Oyster Pay.jpg" alt="Sia Matrouh Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/Porto groub.jpg" alt="Oyster Bay Beach Resort & Spa Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/Safe.jpg" alt="Heidelberg Steel Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/Nyoum.png" alt="Heidelberg Steel Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <img src="images/Previous work/Azooz.jpg" alt="Heidelberg Steel Logo" class="max-h-20 w-auto object-contain" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-pdca-lightblue">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" data-translate="contact-title">Contact Us</h2>
+        <div class="w-16 h-1 bg-pdca-green mx-auto mb-6"></div>
+        <p class="text-gray-700 max-w-2xl mx-auto" data-translate="contact-description">
+          Have questions or ready to schedule a pest control service? 
+          Get in touch with our team of experts today.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div>
+          <div class="bg-white rounded-lg shadow-lg p-8 h-full">
+            <h3 class="text-2xl font-semibold text-pdca-blue mb-6" data-translate="contact-form-title">Send Us a Message</h3>
+            <div id="form-success" class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4 hidden" data-translate="form-success">
+              Thank you! Your message has been sent. We'll get back to you soon.
+            </div>
+            <div id="contact-form">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 mb-2" data-translate="form-name">Full Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pdca-blue" required />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 mb-2" data-translate="form-email">Email Address</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pdca-blue" required />
+              </div>
+              <div class="mb-4">
+                <label for="phone" class="block text-gray-700 mb-2" data-translate="form-phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pdca-blue" />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700 mb-2" data-translate="form-message">Your Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pdca-blue" required></textarea>
+              </div>
+              <button id="submit-form" class="w-full bg-pdca-blue hover:bg-pdca-blue/90 text-white py-3 rounded-md font-medium flex items-center justify-center gap-2 transition-colors" data-translate="form-submit">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
+            <div class="relative h-64">
+              <img src="images/contact.jpg" alt="PDCA Pest Control Team" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-pdca-blue bg-opacity-30"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-white text-center">
+                  <h3 class="text-2xl font-bold mb-2" data-translate="contact-info-title">PDCA Pest Control</h3>
+                  <p data-translate="contact-info-subtitle">Professional Pest Management Solutions</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-8 flex-grow">
+              <h3 class="text-xl font-semibold text-pdca-blue mb-6" data-translate="contact-info-heading">Contact Information</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div class="mr-4 mt-1 text-pdca-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-medium" data-translate="contact-email-title">Email</h4>
+                    <p class="text-gray-600">pdcacontrol@outlook.sa</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="mr-4 mt-1 text-pdca-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-medium" data-translate="contact-phone-title">Phone</h4>
+                    <p class="text-gray-600">01014815202</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="mr-4 mt-1 text-pdca-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-medium" data-translate="contact-address-title">Address</h4>
+                    <p class="text-gray-600" data-translate="contact-address">October city - city star mall - B3 - F3</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6 pt-6 border-t">
+                <h4 class="font-medium mb-3" data-translate="contact-hours-title">Business Hours</h4>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                  <div>
+                    <p class="font-medium" data-translate="contact-hours-weekdays">Sunday - Thursday</p>
+                    <p class="text-gray-600">9:00 AM - 6:00 PM</p>
+                  </div>
+                  <div>
+                    <p class="font-medium" data-translate="contact-hours-weekends">Friday - Saturday</p>
+                    <p class="text-gray-600">9:00 AM - 2:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 md:px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <div class="mb-4">
+            <img src="images/Logo.png" alt="PDCA Logo" class="h-12" />
+          </div>
+          <p class="text-gray-400 mb-6" data-translate="footer-description">
+            Professional pest control solutions using the latest methods and equipment to ensure effective pest management for both residential and commercial properties.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-pdca-blue transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-pdca-blue transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-pdca-blue transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-pdca-blue transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4" data-translate="footer-links-title">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white transition-colors" data-translate="nav-home">Home</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors" data-translate="nav-services">Services</a></li>
+            <li><a href="#who" class="text-gray-400 hover:text-white transition-colors" data-translate="nav-who">Who We Are</a></li>
+            <li><a href="#why" class="text-gray-400 hover:text-white transition-colors" data-translate="nav-why">Why Choose Us</a></li>
+            <li><a href="#deals" class="text-gray-400 hover:text-white transition-colors" data-translate="nav-deals">Our Process</a></li>
+            <li><a href="#previous-work" class="text-gray-400 hover:text-white transition-colors" data-translate="nav-previous">Previous Work</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors" data-translate="nav-contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4" data-translate="footer-services-title">Services</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors" data-translate="footer-service-residential">Residential Pest Control</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors" data-translate="footer-service-commercial">Commercial Pest Control</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors" data-translate="footer-service-termite">Termite Control</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors" data-translate="footer-service-rodent">Rodent Control</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors" data-translate="footer-service-mosquito">Mosquito Control</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors" data-translate="footer-service-bedbug">Bed Bug Treatment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4" data-translate="footer-contact-title">Contact Information</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-3 mt-1 text-pdca-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span class="text-gray-400">pdcacontrol@outlook.sa</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-3 mt-1 text-pdca-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span class="text-gray-400">01014815202</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-3 mt-1 text-pdca-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-gray-400" data-translate="contact-address">October city - city star mall - B3 - F3</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p data-translate="footer-copyright">© 2025 PDCA Pest Control. All rights reserved.</p>
+        <p class="mt-2" data-translate="footer-iso">ISO 9001 Certified Company</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
