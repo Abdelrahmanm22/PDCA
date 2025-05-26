@@ -67,11 +67,11 @@
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: 'Roboto', 'Amiri', sans-serif;
+  font-family: 'Cairo','Roboto', 'Amiri', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', 'Amiri', sans-serif;
+  font-family: 'Cairo','Montserrat', 'Amiri', sans-serif;
 }
 
 section {
@@ -109,7 +109,7 @@ html {
 /* RTL and Language-Specific Styles */
 body[lang="ar"] {
   direction: rtl;
-  font-family: 'Amiri', 'Roboto', sans-serif;
+  font-family: 'Cairo','Amiri', 'Roboto', sans-serif;
 }
 
 body[lang="ar"] .container {
